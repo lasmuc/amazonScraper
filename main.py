@@ -134,6 +134,9 @@ def check_price_daily():
             time.sleep(60 * 60)
 
 def send_email():
+    #Create a .env file with an outlook email address and password with the following format:
+    #SENDER_EMAIL=example@outlook.com
+    #SENDER_PASSWORD=yourpassword
     # Your email credentials
     sender_email = os.getenv('SENDER_EMAIL')
     sender_password = os.getenv('SENDER_PASSWORD')
